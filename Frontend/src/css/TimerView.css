@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  background-color: #FFE9D3;
+}
+
+.pomodoro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.tomato {
+  position: relative;
+  width: 363px;
+  height: 305px;
+  background: url('/tomato.svg') no-repeat center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.timer {
+  font-size: 48px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  color: #FFF;
+  font-family: "Istok Web";
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 100px;
+}
+
+.play-button {
+  width: 55px;
+  height: 55px;
+  background-color: #1D1B20;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  mask-image: url("/play_button.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.play-button.running {
+  background-color: #1D1B20;
+  mask: url("/pause_button.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.next-button {
+  width: 55px;
+  height: 55px;
+  background-color: #1D1B20;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  mask-image: url("/next_button.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.back-button {
+  width: 55px;
+  height: 55px;
+  background-color: #1D1B20;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  mask-image: url("/back_button.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+  margin-top: 20px;
+}
