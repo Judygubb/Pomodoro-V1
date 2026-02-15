@@ -27,3 +27,4 @@
 /Users/judygubb/Pomodoro/Pomodoro/obj/Debug/net10.0/Pomodoro.pdb
 /Users/judygubb/Pomodoro/Pomodoro/obj/Debug/net10.0/Pomodoro.genruntimeconfig.cache
 /Users/judygubb/Pomodoro/Pomodoro/obj/Debug/net10.0/ref/Pomodoro.dll
+/Users/judygubb/Pomodoro/Pomodoro/obj/Debug/net10.0/Pomodoro.sourcelink.json

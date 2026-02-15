@@ -14,7 +14,7 @@ const emit = defineEmits([  // Events sent to the presenter
 ]);
 
 function formatTime(seconds) {  // Time formatting function
-  const m = Math.floor(seconds / 60);
+  const m = Math.floor(seconds / 60);  // hehe
   const s = seconds % 60;
   return `${m}:${s.toString().padStart(2, "0")}`;
 }
@@ -22,21 +22,21 @@ function formatTime(seconds) {  // Time formatting function
 
 
 <template>
-  <div class="pomodoro-container">
+  <div class="pomodoro-container"> 
     <div class="tomato">
       <h1 class="timer">{{ formatTime(timeLeft) }}</h1>
     </div>
 
     <div class="buttons">
 
-      <button class="back-button" @click="emit('reset')"></button>
+      <button class="button button-back" @click="emit('reset')"></button>
 
       
-      <button :class="['play-button', { running: isRunning }]"
+      <button :class="['button button-play', { running: isRunning }]"
               @click="emit(isRunning ? 'pause' : 'start')"></button>
 
 
-      <button class="next-button"></button>
+      <button class="button button-next"></button>
     </div>
   </div>
 </template>
