@@ -12,7 +12,7 @@ public class PomodoroTimer
         if (IsRunning) return;
 
         IsRunning = true;  // Starts timer
-        _startedAt = DateTime.UtcNow;  // Stores current time
+        _startedAt = DateTime.UtcNow;  // Stores current time plz work
     }
 
     public void Pause()
