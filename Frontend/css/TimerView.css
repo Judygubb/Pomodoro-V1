@@ -1,6 +1,11 @@
-body { 
-  margin: 0; 
+.background {
+  transition: all 0.2s ease;
   background-color: #FFE9D3;
+}
+
+.background.break {
+  transition: all 0.2s ease;
+  background-color: #E8E4CA;
 }
 
 .pomodoro-container {
@@ -13,6 +18,7 @@ body {
 }
 
 .tomato {
+  transition: all 0.2s ease;
   position: relative;
   width: 363px;
   height: 305px;
@@ -22,6 +28,11 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+}
+
+.tomato.break {
+  transition: all 0.2s ease;
+  background: url('/break_tomato.svg') no-repeat center;
 }
 
 .timer {
@@ -60,7 +71,7 @@ body {
 }
 
 .button-play {
-    mask-image: url("/play_button.svg");
+  mask-image: url("/play_button.svg");
 }
 
 .button-play.running {
@@ -69,8 +80,8 @@ body {
     mask-position: center;
 }
 
-.button-next {
-    mask-image: url("/next_button.svg");
+.button-skip {
+    mask-image: url("/skip_button.svg");
 }
 
 .button-back {

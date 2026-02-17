@@ -17,7 +17,8 @@ public class PomodoroController : ControllerBase // ControllerBase is the base c
         return new
         {
             timeLeft = _timer.GetTimeLeft(),  // Calculated seconds left
-            isRunning = _timer.IsRunning  // Whether the timer is running
+            isRunning = _timer.IsRunning,  // Whether the timer is running
+            isBreak = _timer.IsBreak  // Whether it is break time
         };
     }
 
@@ -42,4 +43,11 @@ public class PomodoroController : ControllerBase // ControllerBase is the base c
         _timer.Reset();  // Resets timer and sets IsRunning = false.
         return Ok(_timer);
     }
+
+    [HttpPost("skip")]
+    public IActionResult Skip()
+        {
+            _timer.Skip();
+            return Ok(_timer);
+        }
 }
